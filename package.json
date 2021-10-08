@@ -15,12 +15,13 @@
     "build": "webpack --mode=production --no-progress --hide-modules --config=webpack.config.js",
     "prepublish": "npm run clean && npm run lint && npm run test && npm run build",
     "prepare": "npm install",
-    "postinstall": "npm install && npm run clean && npm run lint && npm run test && npm run build"
+    "postinstall": "npm run build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/andreekeberg/ml-classify-text-js.git"
   },
+  "files": ["src","lib"],
   "keywords": [
     "text classification",
     "classification",
