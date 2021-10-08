@@ -14,12 +14,8 @@
     "lint": "eslint src test",
     "build": "webpack --mode=production --no-progress --hide-modules --config=webpack.config.js",
     "prepublish": "npm run clean && npm run lint && npm run test && npm run build",
-    "preinstall": "npm run clean && npm run lint && npm run test && npm run build"
+    "postinstall": "npm run clean && npm run lint && npm run test && npm run build"
   },
-  "files": [
-    "lib",
-    "src"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/andreekeberg/ml-classify-text-js.git"
