@@ -133,6 +133,7 @@ class Model {
      */
     serialize() {
         return {
+            version: 1,
             nGramMin: this._nGramMin,
             nGramMax: this._nGramMax,
             vocabulary: Array.from(this._vocabulary.terms),
